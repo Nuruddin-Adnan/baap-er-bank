@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="lg:p-8 p-5 bg-green-100 md:w-3/4 md:mx-auto mx-4 my-8 space-y-10">
+        <h1 class="md:text-5xl text-3xl text-center text-blue-500">Let's get some <span
+                class="text-blue-700 font-semibold">Mooooooooney</span> !!!</h1>
+        <!-- diposit/widthdraw and balance -->
+        <section>
+            <div class="grid md:grid-cols-3 gap-5">
+                <div class="bg-emerald-400 text-white rounded-lg lg:p-8 p-5">
+                    <p class="text-xl">Deposit</p>
+                    <h4 class="text-3xl font-semibold">$<span id="deposit-amount">00</span></h4>
+                </div>
+                <div class="bg-pink-400 text-white rounded-lg lg:p-8 p-5">
+                    <p class="text-xl">Withdraw</p>
+                    <h4 class="text-3xl font-semibold">$<span id="withdraw-amount">00</span></h4>
+                </div>
+                <div class="bg-red-400 text-white rounded-lg lg:p-8 p-5">
+                    <p class="text-xl">Balance</p>
+                    <h4 class="text-3xl font-semibold">$<span id="balance-amount">1200</span></h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- input -->
+        <section>
+            <div class="grid sm:grid-cols-2 gap-5">
+                <div class="bg-sky-300 text-white rounded-lg p-8 space-y-5">
+                    <p class="text-xl">Please Deposit</p>
+                    <input id="deposit-input"
+                        class="px-3 py-2 block md:w-3/4 w-full border rounded border-gray-300 text-gray-700" type="text"
+                        placeholder="Enter you want to deposit">
+                    <button id="deposit-btn"
+                        class="bg-sky-700 hover:bg-sky-800 px-10 py-3 rounded-md text-white font-medium transition-all">Deposit</button>
+                </div>
+                <div class="bg-purple-300 text-white rounded-lg p-8 space-y-5">
+                    <p class="text-xl">Please Withdraw</p>
+                    <input id="withdraw-input"
+                        class="px-3 py-2 block md:w-3/4 w-full border rounded border-gray-300 text-gray-700" type="text"
+                        placeholder="Enter you want to withdraw">
+                    <button id="withdraw-btn"
+                        class="bg-sky-700 hover:bg-sky-800 px-10 py-3 rounded-md text-white font-medium transition-all">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
